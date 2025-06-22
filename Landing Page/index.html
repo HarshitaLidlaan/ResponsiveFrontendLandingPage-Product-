@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="updates-bar">
+    <p class="update-text">UPDATES: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ipsam. &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; NEW FEATURES: Check out our latest tools and services!</p>
+  </div>
+
+  <header>
+    <div class="navbar">
+      <h1 class="logo">BrandName</h1>
+      <form class="search-bar" action="#" method="get">
+        <input type="text" placeholder="Search Your Content" name="query" />
+        <button type="submit">Search</button>
+      </form>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <nav>
+      <ul class="hero-links">
+        <li><a href="#">Administration</a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">Department</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+    <div id="home" class="hero-content">
+      <div class="main-content">
+        <img src="img1.png" alt="Description" width="300" height="100" />
+      </div>
+
+      <div class="notification">
+        <div class="tab-header">
+          <button onclick="showTab('Messages')" id="btnMessages">Messages</button>
+          <button onclick="showTab('Notices')" id="btnNotices">Notices</button>
+        </div>
+        <div class="tab-content" id="Messages">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eveniet in! Vero est consequatur
+            deleniti at unde nam qui fugit asperiores. Esse sit deserunt dolore distinctio reprehenderit quasi, animi
+            accusantium quae eaque consectetur voluptas beatae temporibus nihil. Eveniet, sed recusandae. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Asperiores ad temporibus odio eaque necessitatibus
+            exercitationem ipsa debitis nam, quam beatae.</p>
+        </div>
+        <div class="tab-content" id="Notices" style="display: none;">
+          <p>Assumenda velit minima omnis, iste inventore vero alias quam dolor ullam expedita... Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Tenetur harum est architecto vel ipsam esse unde laboriosam earum autem,
+            voluptatum illum voluptas quo vero rerum fugit dolor dolores vitae veritatis?</p>
+        </div>
+      </div>
+
+      <script>
+        function showTab(tabName) {
+          document.getElementById('Messages').style.display = 'none';
+          document.getElementById('Notices').style.display = 'none';
+          document.getElementById(tabName).style.display = 'block';
+
+          document.getElementById('btnMessages').classList.remove('active');
+          document.getElementById('btnNotices').classList.remove('active');
+
+          document.getElementById('btn' + tabName).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          showTab('Messages');
+        });
+      </script>
+
+      <div class="main-content">
+        <img src="img1.png" alt="Description" width="300" height="100" />
+      </div>
+
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="prev">&#8249;</button>
+          <h2 id="month-year"></h2>
+          <button id="next">&#8250;</button>
+        </div>
+        <div class="calendar-days">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="calendar-dates" id="dates"></div>
+      </div>
+
+      <script src="scr.js"></script>
+
+      <div id="dictionary" class="main-content">
+        <h3>Hindi word of the day</h3>
+        <h4>Documents</h4>
+        <h4>दस्तावेज़</h4>
+        <h4>Acknowledgements</h4>
+        <h4>अभिस्वीकृति</h4>
+        <h4>Declarations</h4>
+        <h4>घोषणा</h4>
+      </div>
+
+      <div class="grid-container">
+        <h3 style=" background-color: #735DA5; color: white; border-radius: 5px;" class="grid-item"><span>QUICK
+            RESOURCES</span></h3>
+        <div class="grid-item"><a href="#dopart1">DO PART 1</a></div>
+        <div class="grid-item"><a href="#KMC">KMC</a></div>
+        <div class="grid-item"><a href="#hrd">HRD
+          </a></div>
+        <div class="grid-item"><a href="#ejournals">E-JOURNALS</a></div>
+        <div class="grid-item"><a href="#cybersecurity">CYBER SECURITY</a></div>
+      </div>
+
+      <div class="main-content">
+        <img src="img2.jpg" alt="images" style="border-radius: 15px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); width: 300px;
+          height: 324px; margin-bottom: 10px; display: flex; justify-content: space-evenly;border: 3px solid #D3C5E5;">
+      </div>
+
+  </section>
+
+  <section id="features" class="features-section">
+    <h1>OUR FEATURES</h1>
+    <ul class="section">
+      <li class="feature-item">
+        <h3>Fast</h3>
+        <p>Lightning-fast performance</p>
+      </li>
+      <li class="feature-item">
+        <h3>Reliable</h3>
+        <p>Dependable Service</p>
+      </li>
+      <li class="feature-item">
+        <h3>Secure</h3>
+        <p>Industry-leading security</p>
+      </li>
+      <li class="feature-item">
+        <h3>Virtual Identity</h3>
+        <p>Always Consistent and Recognizable</p>
+      </li>
+      <li class="feature-item">
+        <h3>Lorem</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </li>
+      <li class="feature-item">
+        <h3>Lorem </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="about" class="about-section">
+    <h1>ABOUT US</h1>
+    <p>We are a team committed to providing excellent service and innovative solutions. Our goal is to help you grow
+      your business effectively.</p>
+    <h3 class="links">Follow Links:</h3>
+    <div class="social-links">
+      <a href="https://github.com/">GitHub</a>
+      <a href="https://linkedin.com/">LinkedIn</a>
+      <a href="https://pinterest.com/">Pinterest</a>
+      <a href="https://www.facebook.com/">Facebook</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+  </section>
+
+  <section>
+    <div id="contact" class="navbar">
+      <nav>
+        <ul class="nav-links">
+          <h1 style="font-size: 25px;" class="logo">CONTACT US:</h1>
+          <li>Phone No. 1234567890</li>
+          <li>Mail us at: abcdefghi@mecs.org.in</li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made by Harshita &copy; 2025 BrandName. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
